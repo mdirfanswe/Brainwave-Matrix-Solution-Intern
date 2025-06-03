@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="planner-container">
+        <header>
+            <h1>Daily Planner</h1>
+            <p id="date"></p>
+        </header>
+        <section class="schedule">
+            <h2>Schedule <button id="clear-schedule">Clear All</button></h2>
+            <div class="hour-slot">
+                <span>8:00 AM</span>
+                <input type="text" class="schedule-input" data-hour="8" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>9:00 AM</span>
+                <input type="text" class="schedule-input" data-hour="9" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>10:00 AM</span>
+                <input type="text" class="schedule-input" data-hour="10" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>11:00 AM</span>
+                <input type="text" class="schedule-input" data-hour="11" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>12:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="12" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>1:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="13" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>2:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="14" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>3:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="15" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>4:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="16" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>5:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="17" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>6:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="18" placeholder="Enter event">
+            </div>
+            <div class="hour-slot">
+                <span>7:00 PM</span>
+                <input type="text" class="schedule-input" data-hour="19" placeholder="Enter event">
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="todo">
+                <h2>To-Do List</h2>
+                <ul id="todo-list">
+                    <li><input type="checkbox"> Task 1</li>
+                </ul>
+                <input type="text" id="new-todo" placeholder="Add a new task">
+                <select id="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button id="add-todo">Add</button>
+                <button id="clear-todo">Clear Completed</button>
+            </div>
+            <div class="notes">
+                <h2>Notes</h2>
+                <textarea id="notes-area" placeholder="Write your notes here..."></textarea>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <p id="weather-info">Sunny, 25°C (Simulated)</p>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
